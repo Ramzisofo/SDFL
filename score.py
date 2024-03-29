@@ -81,7 +81,7 @@ def reward(eq_loc):
         num_values.append(re.findall(r'\b\d+(?:\.\d+)?\b', eq_[d]))
         nb_plus.append(eq_[d].count("+"))
         num_values[d] = np.array([float(num) for num in num_values[d]]) # Discarding trivial equations
-        if ((np.all(np.abs(num_values[d])< 0.1)) and (len(num_values[d]) > nb_plus[d]) ) or (eq_[d] == '0'):
+        if ((np.all(np.abs(num_values[d])< 0.0000000001)) and (len(num_values[d]) > nb_plus[d]) ) or (eq_[d] == '0'):
             return 10000000000000
 
     def eval_eq(t, var):
