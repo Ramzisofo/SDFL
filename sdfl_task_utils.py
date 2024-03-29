@@ -84,7 +84,7 @@ rule_map = {
                      'A->cos(T)', 'A->sin(T)', 'T->x1', 'T->x2', 'T->T+T', 'T->T-T',
                      'A->sign(S)', 'S->w1', 'S->w2', 'S->wdot', 'A->S+S', 'B->S-S']), 
 
-    **dict.fromkeys(['lorenz_x', 'lorenz_y', 'lorenz_z'], 
+    **dict.fromkeys(['elem_symb'], 
                     ['A->A+A', 'A->A-A', 'A->A*A']  + ['A->x'+str(i)+' ' for i in range(1, 2+1)] + ['A->sin(A)', 'A->cos(A)', 'A->exp(A)']  )
                    #  + ['A->x'+str(j) +'-'+ 'x'+str(i) for j in range(1, dim+1) for i in range(1, dim+1)])
 }
