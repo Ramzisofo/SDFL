@@ -16,7 +16,7 @@ warnings.filterwarnings("ignore", category=DeprecationWarning)
 
 dim = 3
 
-def run_sdfl(task, num_run, transplant_step, data_dir='data/', max_len = 20, eta = 0.9999,
+def run_sdfl( num_run, transplant_step, data_dir='data/', max_len = 20, eta = 0.9999,
             max_module_init = 10, num_aug = 5, exp_rate = 1/np.sqrt(2), num_transplant = 20, 
             norm_threshold=1e-5, count_success = True):
     """
