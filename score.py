@@ -153,7 +153,7 @@ def score_with_est( eq_comp, t_limit=10000.0):
     with time_limit(t_limit, 'sleep'):
         try:
             if c_count == [0 for _ in range(dim)]:  ## no numerical values
-                f_pred = reward(eq_comp, pr)
+                f_pred = reward(eq_comp)
             elif np.sum(c_count) >= 20:  ## discourage over complicated numerical estimations
                 return 0, eq_comp
             else:  ## with numerical values: coefficient estimation with Powell method
