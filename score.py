@@ -131,12 +131,8 @@ def score_with_est( eq_comp, t_limit=10000.0):
 
     Parameters
     ----------
-    eq : Str object.
+    eq_comp : Str object.
         the discovered equation (with placeholders for coefficients).
-    tree_size : Int object.
-        number of production rules in the complete parse tree.
-    data : 2-d numpy array.
-        measurement data, including independent and dependent variables (last row).
     t_limit : Float object.
         time limit (seconds) for ssingle evaluation, default 1 second.
 
