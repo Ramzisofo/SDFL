@@ -89,3 +89,6 @@ rule_map = {
                    #  + ['A->x'+str(j) +'-'+ 'x'+str(i) for j in range(1, dim+1) for i in range(1, dim+1)])
 }
 
+ntn_map = {
+    **dict.fromkeys(['elem_symb'], ['A'])
+}
