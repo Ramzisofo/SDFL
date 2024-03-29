@@ -187,9 +187,7 @@ class SdflBase:
                         eq_vec[dim] = modified_eq
                     print("eq_vec ELSE = ", eq_vec)
 
-            reward, eq = self.score(eq_vec, eq_vec,
-                                    [len(state.split(',')) for dim in range(self.dim)],
-                                    self.data_sample, eta=self.eta)
+            reward, eq = self.score(eq_vec)
             return state, ntn, reward, True, eq[0]
         else:
 
