@@ -78,7 +78,7 @@ rule_map = {
                   'B->x', 'B->y', 'B->x**2', 'B->y**2', 'B->x*y', 
                   'B->x**2*y', 'B->x*y**2', 'B->x**3', 'B->y**3'],
 
-    **dict.fromkeys(balldrop_exp, ['A->A+A', 'A->A-A', 'A->A*A', 'A->A/A', 'A->A*C', 
+    **dict.fromkeys(['A->A+A', 'A->A-A', 'A->A*A', 'A->A/A', 'A->A*C', 
                                    'A->1', 'A->x', 'A->x*x', 'A->x*x*x', 
                                    'A->exp(A)', 
                                    'A->log(C*cosh(A))']),
