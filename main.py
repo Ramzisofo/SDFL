@@ -42,7 +42,7 @@ print(" time = ", execution_time )
 # To run SDFL, uncomment the code below and add your system data file name in the score.py file
 
 # start_time = time.time()
-# all_eqs, _, _ = run_sdfl(
+# all_eqs, _, _ = run_sdfl('elem_symb',
 #                         num_run=1 ,
 #                         max_len=20,
 #                         eta=1-1e-3,
