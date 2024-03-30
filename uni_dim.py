@@ -355,8 +355,6 @@ class SdflBase:
                       end="")
                 sys.stdout.flush()
             print("episode = ", i_episode)
-            if i_episode == 20000:
-                pr = True
             state = 'f->A'
             ntn = ['A']
             UC = self.get_unvisited(state, ntn[0])
