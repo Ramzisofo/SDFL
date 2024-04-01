@@ -123,7 +123,7 @@ def reward(eq_loc):
 
     return r
 
-def score_with_est( eq_comp, t_limit=10000.0):
+def score_with_est( eq_comp, t_limit=100.0):
     """
     Calculate reward score for a complete parse tree
     If placeholder C is in the equation, also excute estimation for C
