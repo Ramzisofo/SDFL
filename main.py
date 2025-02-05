@@ -4,11 +4,11 @@ import sys
 import numpy as np
 sys.path.append(r'../')
 
-from spl_train import run_sdfl
+from sdfl_train import run_sdfl
 import time
 from score import  score_with_est
 from uni_dim import SdflBase
-from spl_task_utils import *
+from sdfl_task_utils import *
 import warnings
 
 
